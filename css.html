@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureCode Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #0f172a; 
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(90deg, #6366f1, #a855f7, #06b6d4);
+      color: white;
+      padding: 15px 30px;
+      font-weight: bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    }
+    nav img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px white;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #1e293b, #334155, #0f172a);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #f97316, #f43f5e, #6366f1);
+      background-clip: text;               
+      -webkit-background-clip: text;       
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: shine 4s linear infinite;
+      background-size: 300%;
+    }
+
+    @keyframes shine {
+      0% {background-position: 0%;}
+      100% {background-position: 300%;}
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #cbd5e1;
+    }
+
+    .hero button {
+      background: #f97316;
+      border: none;
+      padding: 14px 28px;
+      color: white;
+      font-size: 16px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #f97316;
+      animation: pulse 2s infinite;
+      transition: transform 0.3s ease;
+    }
+
+    .hero button:hover {
+      transform: scale(1.1);
+      background: #fb923c;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #f97316; }
+      50% { box-shadow: 0 0 25px #f97316; }
+      100% { box-shadow: 0 0 10px #f97316; }
+    }
+
+    .courses {
+      padding: 60px 20px;
+      background: #1e293b;
+      text-align: center;
+    }
+
+    .courses h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #facc15;
+      letter-spacing: 1px;
+    }
+
+    .course-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .card {
+      background: #0f172a;
+      border-radius: 15px;
+      width: 220px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255,255,255,0.05);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .card:hover {
+      transform: rotateY(10deg) scale(1.05);
+      box-shadow: 0 0 25px #6366f1;
+    }
+
+    .card img {
+      width: 80px;
+      height: auto;
+      filter: drop-shadow(0 0 10px #22d3ee);
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+      color: #f9fafb;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #6366f1, #a855f7, #06b6d4);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="Logo">
+    FutureCode Academy
+  </nav>
+
+  <section class="hero">
+    <h1>Level Up Your Web Skills</h1>
+    <p>Belajar HTML, CSS, JavaScript, dan PHP dengan pendekatan futuristik & interaktif.</p>
+    <button>Join Now</button>
+  </section>
+
+  <section class="courses">
+    <h2>Our Courses</h2>
+    <div class="course-cards">
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">
+        <h3>HTML</h3>
+        <p>Bangun fondasi web dengan markup yang kuat.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo">
+        <h3>CSS</h3>
+        <p>Hadirkan desain modern & responsif.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS Logo">
+        <h3>JavaScript</h3>
+        <p>Buat website dinamis & interaktif.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Logo">
+        <h3>PHP</h3>
+        <p>Kelola data & backend dengan fleksibel.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 FutureCode Academy | Designed with ⚡ Arya Rangga Putra Pratama
+  </footer>
+
+</body>
+</html>
